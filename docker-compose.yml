@@ -1,0 +1,9 @@
+pure-ftpd:
+  image: arm32v7/vsftpd:leatest
+  net: host
+  volumes:
+    - ./home/brother:/home/brother/ftp/upload
+  privileged: true
+  ports: 
+    - "21:21"
+  restart: always
