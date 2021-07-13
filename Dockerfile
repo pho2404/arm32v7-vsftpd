@@ -2,7 +2,7 @@
 
 #docker build  --build-arg FTPUSER=user --build-arg FTPPASSWORD=password --tag "arm32v7/vsftpd:latest" . 
 
-FROM arm32v7/python:latest
+FROM arm32v7/python
 
 ARG FTPUSER
 ARG FTPPASSWORD
