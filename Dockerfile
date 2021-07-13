@@ -1,8 +1,8 @@
 # Python Base Image from https://hub.docker.com/r/arm32v7/python/
 
-#docker build  --build-arg FTPUSER=user --build-arg FTPPASSWORD=password --tag "arm32v7/vsftpd:leatest" . 
+#docker build  --build-arg FTPUSER=user --build-arg FTPPASSWORD=password --tag "arm32v7/vsftpd:latest" . 
 
-FROM arm32v7/python
+FROM arm32v7/python:latest
 
 ARG FTPUSER
 ARG FTPPASSWORD
